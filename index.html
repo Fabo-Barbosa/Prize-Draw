@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sortex</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Sortex</h1>
+        </header>
+
+        <main>
+            <h2>Configure um intervalo</h2>
+            <form action="" class="config" id="setInterval">
+
+                <label for="inicio">Valor inicial:</label>
+                <input type="number" class="interval" name="inicio" value="1">
+
+                <label for="fim">Valor final:</label>
+                <input type="number" class="interval" name="fim" value="100">
+
+                <label for="quantidade">Quantos números sorteados:</label>
+                <input type="number" class="interval" name="quantidade" value="1">
+
+                <label for="no-consider">Não sortear: </label>
+                <input type="text" class="interval" name="no-consider" placeholder="Ex: 23 40 77 56">
+
+                <input type="checkbox" class="check" name="no-repete">
+                <label for="no-repete">Sortear mesmo número</label>
+
+                <input type="button" class="btn" name="sortear" value="Sortear">
+
+                <input type="button" class="btn" name="criar-rifa" value="Criar rifa">
+
+            </form>
+        </main>
+    </div>
+    
+</body>
+</html>
