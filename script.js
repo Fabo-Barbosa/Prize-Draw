@@ -19,8 +19,17 @@ function transformArray(stringNumber) {
   stringNumber += " f"; // pra achar o ultimo número
   for (numero of stringNumber) {
     if (numero == " ") {
+      // se for um número
       if (!isNaN(parseFloat(stringAux)) && isFinite(stringAux)) {
-        arrayNumero.push(parseInt(stringAux));
+        // se estiver dentro intervalo definido pelo user
+        if (
+          valorInicial.value <= parseInt(stringAux) &&
+          valorFinal.value >= parseInt(stringAux)
+        ) {
+          // se ainda não estiver dentro do array
+          if (!verificaNumero(stringAux, arrayNumero))
+            arrayNumero.push(parseInt(stringAux));
+        }
         stringAux = "";
       } else {
         stringAux = "";
@@ -63,7 +72,6 @@ function sortear() {
 
   // variaveis auxiliares
   let aux;
-  let metadeDeSorteados = quantosNumerosSortear / 2;
 
   // condição que não deixa sortear mais números do o valor final
   if (
@@ -76,7 +84,7 @@ function sortear() {
 
   // a qunatidade de números excluídos não pode
   // passar da metade da quantidade de números sorteados (loop infinito)
-  if (excluidos.length >= metadeDeSorteados) {
+  if (excluidos.length >= max - quantosNumerosSortear) {
     alert("Você não pode usar esse intervalo. Tente de novo");
     return numeros;
   }
