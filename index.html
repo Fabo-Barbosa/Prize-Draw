@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sortex</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <div id="container">
         <header>
@@ -28,16 +30,18 @@
                 <label for="no-consider">Não sortear: </label>
                 <input type="text" class="interval" name="no-consider" placeholder="Ex: 23 40 77 56">
 
-                <input type="checkbox" class="check" name="no-repete">
+                <input value="checked" type="checkbox" class="check" name="no-repete">
                 <label for="no-repete">Sortear mesmo número</label>
 
-                <input type="button" class="btn" name="sortear" value="Sortear">
+                <input type="button" class="btn" name="sortear" value="Sortear numero">
 
                 <input type="button" class="btn" name="criar-rifa" value="Criar rifa">
 
             </form>
+            <ul id="display" style="margin-top: 35px;"></ul>
         </main>
     </div>
-    
+    <script src="script.js"></script>
 </body>
+
 </html>

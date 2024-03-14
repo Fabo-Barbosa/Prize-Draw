@@ -1,78 +1,79 @@
-body{
-    padding: 0px;
-    margin: 0px;
+body {
+  padding: 0px;
+  margin: 0px;
 }
 
 #container {
-    margin: auto;
-    height: 100vh;
-    width: 65%;
-    padding: 2%;
-    background-color: green;
+  margin: auto;
+  height: 100%;
+  width: 65%;
+  padding: 2%;
+  padding-bottom: 82px;
+  background-color: green;
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 2% 0 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2% 0 3%;
 }
 
 .btn {
-    display: inline;
-    font-size: 18px;
-    cursor: pointer;
-    border: 3px solid;
-    border-radius: 10px;
-    font-family:'Courier New', Courier, monospace;
-    font-weight:bold;
-    background-color: darkgray;
-    margin: 30px -65px 0px 65px;
+  font-size: 18px;
+  cursor: pointer;
+  border: 3px solid;
+  border-radius: 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  margin-top: 15px;
+  background-color: darkgray;
 }
 
 h1 {
-    color: gold;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 40px;
-    font-weight:600;
-    margin: 0;
+  color: gold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0;
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 10px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 h2 {
-    color: white;
-    margin-bottom: 10px;
-    font-size: 30px;
+  color: white;
+  margin-bottom: 10px;
+  font-size: 30px;
 }
 
 .config {
-    background-color: white;
-    border-radius: 10px;
-    padding: 30px;
-    width: 30%;
-    font-size: 20px;
-    font-weight:bold;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  width: 30%;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .interval {
-    display: block;
-    margin-bottom: 20px;
-    height: 25px;
-    border: 0px solid green;
-    border-width: 0px 0px 2px 0px;
+  display: block;
+  margin-bottom: 20px;
+  height: 25px;
+  border: 0px solid green;
+  border-width: 0px 0px 2px 0px;
 }
 
 .check {
-    width: 20px;
-    height: 20px;
-    padding: 0px;
-    cursor: pointer;
+  width: 20px;
+  height: 20px;
+  padding: 0px;
+  cursor: pointer;
 }
